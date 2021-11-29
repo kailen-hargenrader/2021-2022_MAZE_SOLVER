@@ -144,6 +144,7 @@ public class ListInterfaceTest {
 		assertTrue("Newly constructed list should be empty.", list.isEmpty());
 		list.insertLast("Hello").insertLast("World!");
 		assertEquals("Insert at should return an instance of the list.", list, list.insertAt(1, "There"));
+		System.out.println(list.get(0) + list.get(1) + list.get(2));
 		assertEquals("Size should be 3", 3, list.size());
 		assertEquals("0th element should .equals \"Hello\"", "Hello", list.get(0));
 		assertEquals("Last element should .equals \"World!\"", "World!", list.getLast());

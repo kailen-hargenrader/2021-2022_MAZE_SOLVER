@@ -4,6 +4,7 @@ import maze.Maze;
 import maze.MazeBuilder;
 import maze.MazeSolution;
 import structure.ListInterface;
+import structure.RecursiveLinkedList;
 
 /**
  * This class acts as a configuration file which tells the testing framework
@@ -29,7 +30,7 @@ public final class Configuration {
    *        the {@link ListInterface} you want graded
    */
   public static <T> ListInterface<T> getListInterface() {
-    return null;
+    return new RecursiveLinkedList<T>();
   }
 
   /**

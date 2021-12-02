@@ -3,11 +3,16 @@ package maze;
 import structure.ListInterface;
 import structure.RecursiveLinkedList;
 
-class ImplementedRoom implements Room {
+public class ImplementedRoom implements Room {
 	private String Long = new String();
 	private String Short = new String();
 	private Boolean Exit;
 	private RecursiveLinkedList<Room> rooms = new RecursiveLinkedList<Room>();
+	public ImplementedRoom() {
+		Long = "";
+		Short = "";
+		Exit = false;
+	}
 	public ImplementedRoom(String l, String s, Boolean exit) {
 		Long = l;
 		Short = s;

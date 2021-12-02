@@ -5,6 +5,7 @@ import maze.MazeBuilder;
 import maze.MazeSolution;
 import structure.ListInterface;
 import structure.RecursiveLinkedList;
+import maze.ImplementedRoom;
 
 /**
  * This class acts as a configuration file which tells the testing framework
@@ -31,6 +32,18 @@ public final class Configuration {
    */
   public static <T> ListInterface<T> getListInterface() {
     return new RecursiveLinkedList<T>();
+  }
+  
+  /**
+   * Returns a new instance of the {@link ListInterface} that you want to be
+   * graded.
+   * @param <T>
+   *        the type of the {@link ListInterface}
+   * @return
+   *        the {@link ListInterface} you want graded
+   */
+  public static ImplementedRoom getRoom() {
+    return new ImplementedRoom("Long", "Short", false);
   }
 
   /**

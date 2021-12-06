@@ -11,7 +11,7 @@ public class ImplementedRoom implements Room {
 	private String Long = new String();
 	private String Short = new String();
 	private Boolean Exit;
-	private RecursiveLinkedList<Room> rooms = new RecursiveLinkedList<Room>();
+	public RecursiveLinkedList<Room> rooms = new RecursiveLinkedList<Room>();
 	/**
 	 * If no passed variables, make empty descriptions and make room not an exit.
 	 */
@@ -50,13 +50,11 @@ public class ImplementedRoom implements Room {
 	public ListInterface<Room> getRooms() {
 		return rooms;
 	}
-	
-	/**
-	 * Add room to list of neighboring rooms.
-	 * @param room
-	 */
-	public void addRoom(Room room) {
-		rooms.insertLast(room);
+	@Override
+	public ListInterface<Room> addRooms(Room room) {
+		// TODO Auto-generated method stub
+		if(rooms.contains(room) == -1) rooms.insertFirst(room);
+		return rooms;
 	}
-
+	
 }

@@ -19,7 +19,7 @@ public class RecursiveLinkedList<T> implements ListInterface<T> {
 	@Override
 	public ListInterface<T> insertFirst(T elem) {
 		// similar to push
-		if(elem == null) throw new IllegalStateException("Cannot pass null into list");
+		if(elem == null) throw new NullPointerException("Cannot pass null into list");
 		// create a node
 		Node<T> newNode = new Node<T>(elem);
 		// set it's next to the current head
@@ -195,6 +195,7 @@ public class RecursiveLinkedList<T> implements ListInterface<T> {
 
 		// 1 recursive case
 		// contains(toFind, toCheck.getNext(), currentIndex+1)
+		if(isEmpty()) return -1;
 		if(toCheck.getElement()==toFind) return currentIndex;
 		if(toCheck.getNext()==null) return -1;
 		return contains(toFind, toCheck.getNext(), currentIndex+1);

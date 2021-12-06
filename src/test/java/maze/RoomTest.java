@@ -42,7 +42,7 @@ public class RoomTest {
 	
 	@Test(timeout = 50)
 	public void testAddRoom() {
-		room.addRoom(new ImplementedRoom());
+		room.addRooms(new ImplementedRoom());
 		assertEquals(1, room.getRooms().size());
 	}
 }

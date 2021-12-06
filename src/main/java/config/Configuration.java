@@ -53,7 +53,7 @@ public final class Configuration {
    *        the {@link MazeBuilderTest} you want to be graded
    */
   public static MazeBuilder getMazeBuilder() {
-    return null;
+    return new maze.MazeBuilderImplementation();
   }
 
   /**

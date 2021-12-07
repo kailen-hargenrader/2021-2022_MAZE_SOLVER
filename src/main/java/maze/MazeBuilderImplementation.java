@@ -1,5 +1,10 @@
 package maze;
 
+/**
+ * Implements the @MazeBuilder abstract
+ * @author monke
+ *
+ */
 public class MazeBuilderImplementation implements MazeBuilder{
 
 	@Override

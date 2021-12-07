@@ -1,10 +1,19 @@
 package structure;
 
+/**
+ * Recursively implements a linked list
+ * @author monke
+ *
+ * @param <T>
+ */
 public class RecursiveLinkedList<T> implements ListInterface<T> {
 
 	private int count;
 	private Node<T> head, tail;
-
+	
+	/**
+	 * Initializes linked list with no start or end and a size of 0
+	 */
 	public RecursiveLinkedList() {
 		count = 0;
 		head = null;

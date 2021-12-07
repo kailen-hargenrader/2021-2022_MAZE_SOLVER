@@ -12,6 +12,7 @@ public class ImplementedRoom implements Room {
 	private String Short = new String();
 	private Boolean Exit;
 	public RecursiveLinkedList<Room> rooms = new RecursiveLinkedList<Room>();
+	
 	/**
 	 * If no passed variables, make empty descriptions and make room not an exit.
 	 */
@@ -20,6 +21,7 @@ public class ImplementedRoom implements Room {
 		Short = "";
 		Exit = false;
 	}
+	
 	/**
 	 * initiate Implemented Room with passed variables
 	 * @param l the long description

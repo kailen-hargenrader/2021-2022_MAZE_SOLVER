@@ -3,6 +3,7 @@ package config;
 import maze.Maze;
 import maze.MazeBuilder;
 import maze.MazeSolution;
+import maze.MazeSolver;
 import structure.ListInterface;
 import structure.RecursiveLinkedList;
 import maze.ImplementedRoom;
@@ -64,7 +65,7 @@ public final class Configuration {
    *        the {@link MazeSolution} you want graded
    */
   public static MazeSolution getMazeSolution(final Maze maze) {
-    return null;
+    return new MazeSolver(maze);
   }
 
 }
